@@ -1,0 +1,23 @@
+.bggray {
+  margin-top: 75px;
+  height: 78px;
+  width: 100%;
+  background-color: lightgray;
+}
+.bggray img {
+  margin-top: -24px;
+  height: 83px;
+}
+.bggray ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-around;
+  border: 1px solid red;
+}
+.container {
+  display: flex;
+  border: 1px solid red;
+  width: 1000px;
+  margin: auto;
+}
