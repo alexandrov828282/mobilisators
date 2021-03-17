@@ -1,26 +1,127 @@
-.bggray{
+@colortext: #383838;
+@colorbgline: #e5e5e5;
+@colormarktext: #33958f;
+@coloractivmunu: #3bbab5;
+
+// @import url(//db.onlinewebfonts.com/c/2bf3dc193657d0d63ae52746612324fb?family=HelveticaLTW10-Roman);
+
+.bggray {
     margin-top: 75px;
     height: 78px;
     width: 100%;
-    background-color: lightgray;
+    background-color: @colorbgline;
+    // border: 1px solid red;
 
-    img{
-        margin-top: -24px;
-        height: 83px;
-    }
-
-    ul{
+    .container {
         display: flex;
-        flex-direction: row;
-        list-style-type: none;
-        justify-content: space-around;
-        border: 1px solid red;
+        max-width: 862px;
+        height: 100%;
+        // border: 1px solid red;
+
+        img {
+            margin-top: -24px;
+            height: 83px;
+            // border: 1px solid red;
+        }
+
+        .logo {
+            // border: 1px solid red;
+            margin-left: -7px;
+            // padding: 0;
+            height: 100%;
+
+            a{
+                text-decoration: none;
+            }
+
+            p {
+                margin-top: 15px;
+                margin-bottom: -12px;
+                padding: 0;
+                color: @colortext;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 400;
+                line-height: 1em;
+                font-size: 20px;
+                
+                span{
+                    // font-family: 'Raleway', sans-serif;
+                    font-family:Arial, Helvetica, sans-serif;
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: @colormarktext;
+                }
+            }
+        }
+
+        nav {
+            flex-grow: 1;
+            font-family: 'HelveticaLTW10-Roman';
+            font-size: 13px;
+            line-height: 27px;
+            font-weight: 400;
+            margin-left: 12px;
+            margin-right: -8px;
+            margin-bottom: 10px;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                list-style-type: none;
+                justify-content: space-around;
+                align-items: center;
+                // border: 1px solid red;
+
+                li {
+                    // border: 1px solid red;
+                    // padding-left: 5px;
+                    // padding-bottom: 5px;
+                    padding: 0;
+                    // flex-grow: 1;
+                }
+            }
+        }
     }
 }
 
-.container{
-    display: flex;
-    border: 1px solid red;
-    width: 1000px;
-    margin: auto;
+main{
+    .container{
+        
+    }
 }
+
+// .container {
+//     display: flex;
+//     // border: 1px solid red;
+//     width: 1000px;
+//     margin: auto;
+// }
+
+// .linkblock {
+//     display: flex;
+//     position: relative;
+//     // border: 1px solid red;
+//     // justify-content:space-between;
+//     :hover{
+//         background: #000;
+//     }
+
+//     .circle {
+//         text-align: center;
+//         width: 150px;
+//         height: 150px;
+//         border: 4px solid orange;
+//         border-radius: 50%;
+        
+//     }
+
+//     img {
+//         position: absolute;
+//         top: -10px;
+//     }
+
+// }
