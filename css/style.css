@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "HelveticaBold";
+  src: url("/fonts/HelveticaLT-Bold/HelveticaBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
 .bggray {
   margin-top: 75px;
   height: 78px;
@@ -8,6 +14,7 @@
   display: flex;
   max-width: 862px;
   height: 100%;
+  margin: auto;
 }
 .bggray .container img {
   margin-top: -24px;
@@ -59,4 +66,31 @@
 }
 .bggray .container nav ul li {
   padding: 0;
+}
+main .container {
+  border: 1px solid red;
+  display: flex;
+  max-width: 960px;
+  height: 100%;
+  margin: auto;
+}
+main .container .section-1 .circle {
+  position: absolute;
+  z-index: -1;
+  width: 400px;
+  height: 400px;
+  background-color: #3bb9b5;
+  border-radius: 50%;
+  margin-top: 107px;
+  margin-left: 14px;
+}
+main .container .section-1 img {
+  margin-top: 78px;
+}
+main .container .section-2-1 p {
+  font-family: 'HelveticaBold';
+  font-size: 80px;
+  line-height: normal;
+  font-weight: 700;
+  color: #8b8b8b;
 }

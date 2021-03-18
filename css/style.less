@@ -1,9 +1,16 @@
-@colortext: #383838;
+@colortextnav: #383838;
 @colorbgline: #e5e5e5;
 @colormarktext: #33958f;
-@coloractivmunu: #3bbab5;
+@coloractivmenu: #3bbab5;
+@coloractivelement: #3bb9b5;
+@colortext: #8b8b8b;
 
-// @import url(//db.onlinewebfonts.com/c/2bf3dc193657d0d63ae52746612324fb?family=HelveticaLTW10-Roman);
+@font-face { 
+    font-family: "HelveticaBold";
+    src: url("/fonts/HelveticaLT-Bold/HelveticaBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
 
 .bggray {
     margin-top: 75px;
@@ -16,6 +23,7 @@
         display: flex;
         max-width: 862px;
         height: 100%;
+        margin: auto;
         // border: 1px solid red;
 
         img {
@@ -38,7 +46,7 @@
                 margin-top: 15px;
                 margin-bottom: -12px;
                 padding: 0;
-                color: @colortext;
+                color: @colortextnav;
                 font-family: 'Open Sans', sans-serif;
                 font-weight: 400;
                 line-height: 1em;
@@ -49,7 +57,7 @@
                     font-family:Arial, Helvetica, sans-serif;
                     font-size: 24px;
                     font-weight: 700;
-                    color: @colormarktext;
+                    color: @colormarktextnav;
                 }
             }
         }
@@ -90,7 +98,39 @@
 
 main{
     .container{
-        
+        border: 1px solid red;
+        display: flex;
+        max-width: 960px;
+        height: 100%;
+        margin: auto;
+
+        .section-1{
+            .circle{
+                position: absolute;
+                z-index: -1;
+                width: 400px;
+                height: 400px;
+                background-color: @coloractivelement;
+                border-radius: 50%;
+                margin-top: 107px;
+                margin-left: 14px;
+            }
+
+            img{
+                margin-top: 78px;
+            }
+        }
+        .section-2-1{
+            color: #8b8b8b;
+            p{
+                color: #8b8b8b;
+                font-family: 'HelveticaBold';
+                font-size: 80px;
+                line-height: normal;
+                font-weight: 700;
+                
+            }
+        }
     }
 }
 
