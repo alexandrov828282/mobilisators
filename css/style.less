@@ -1,167 +1,179 @@
-@colortextnav: #383838;
-@colorbgline: #e5e5e5;
-@colormarktext: #33958f;
-@coloractivmenu: #3bbab5;
-@coloractivelement: #3bb9b5;
-@colortext: #8b8b8b;
+// @colortextnav: #383838;
+// @colorbgline: #e5e5e5;
+// @colormarktext: #33958f;
+// @coloractivmenu: #3bbab5;
+// @coloractivelement: #3bb9b5;
+// @colortext: #8b8b8b;
 
-@font-face { 
-    font-family: "HelveticaBold";
-    src: url("/fonts/HelveticaLT-Bold/HelveticaBold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: 700;
-}
-
-.bggray {
-    margin-top: 75px;
-    height: 78px;
-    width: 100%;
-    background-color: @colorbgline;
-    // border: 1px solid red;
-
-    .container {
-        display: flex;
-        max-width: 862px;
-        height: 100%;
-        margin: auto;
-        // border: 1px solid red;
-
-        img {
-            margin-top: -24px;
-            height: 83px;
-            // border: 1px solid red;
-        }
-
-        .logo {
-            // border: 1px solid red;
-            margin-left: -7px;
-            // padding: 0;
-            height: 100%;
-
-            a{
-                text-decoration: none;
-            }
-
-            p {
-                margin-top: 15px;
-                margin-bottom: -12px;
-                padding: 0;
-                color: @colortextnav;
-                font-family: 'Open Sans', sans-serif;
-                font-weight: 400;
-                line-height: 1em;
-                font-size: 20px;
-                
-                span{
-                    // font-family: 'Raleway', sans-serif;
-                    font-family:Arial, Helvetica, sans-serif;
-                    font-size: 24px;
-                    font-weight: 700;
-                    color: @colormarktextnav;
-                }
-            }
-        }
-
-        nav {
-            flex-grow: 1;
-            font-family: 'HelveticaLTW10-Roman';
-            font-size: 13px;
-            line-height: 27px;
-            font-weight: 400;
-            margin-left: 12px;
-            margin-right: -8px;
-            margin-bottom: 10px;
-
-            ul {
-                display: flex;
-                flex-direction: row;
-                width: 100%;
-                height: 100%;
-                margin: 0;
-                padding: 0;
-                list-style-type: none;
-                justify-content: space-around;
-                align-items: center;
-                // border: 1px solid red;
-
-                li {
-                    // border: 1px solid red;
-                    // padding-left: 5px;
-                    // padding-bottom: 5px;
-                    padding: 0;
-                    // flex-grow: 1;
-                }
-            }
-        }
-    }
-}
-
-main{
-    .container{
-        border: 1px solid red;
-        display: flex;
-        max-width: 960px;
-        height: 100%;
-        margin: auto;
-
-        .section-1{
-            .circle{
-                position: absolute;
-                z-index: -1;
-                width: 400px;
-                height: 400px;
-                background-color: @coloractivelement;
-                border-radius: 50%;
-                margin-top: 107px;
-                margin-left: 14px;
-            }
-
-            img{
-                margin-top: 78px;
-            }
-        }
-        .section-2-1{
-            color: #8b8b8b;
-            p{
-                color: #8b8b8b;
-                font-family: 'HelveticaBold';
-                font-size: 80px;
-                line-height: normal;
-                font-weight: 700;
-                
-            }
-        }
-    }
-}
-
-// .container {
-//     display: flex;
-//     // border: 1px solid red;
-//     width: 1000px;
-//     margin: auto;
+// @font-face { 
+//     font-family: "HelveticaBold";
+//     src: url("/fonts/HelveticaLT-Bold/HelveticaBold.ttf") format("truetype");
+//     font-style: normal;
+//     font-weight: 700;
 // }
 
-// .linkblock {
-//     display: flex;
-//     position: relative;
+// .bggray {
+//     margin-top: 75px;
+//     height: 78px;
+//     width: 100%;
+//     background-color: @colorbgline;
 //     // border: 1px solid red;
-//     // justify-content:space-between;
-//     :hover{
-//         background: #000;
-//     }
 
-//     .circle {
-//         text-align: center;
-//         width: 150px;
-//         height: 150px;
-//         border: 4px solid orange;
-//         border-radius: 50%;
+//     .container {
+//         display: flex;
+//         max-width: 862px;
+//         height: 100%;
+//         margin: auto;
+//         // border: 1px solid red;
+
+//         img {
+//             margin-top: -24px;
+//             height: 83px;
+//             // border: 1px solid red;
+//         }
+
+//         .logo {
+//             // border: 1px solid red;
+//             margin-left: -7px;
+//             // padding: 0;
+//             height: 100%;
+
+//             a{
+//                 text-decoration: none;
+//             }
+
+//             p {
+//                 margin-top: 15px;
+//                 margin-bottom: -12px;
+//                 padding: 0;
+//                 color: @colortextnav;
+//                 font-family: 'Open Sans', sans-serif;
+//                 font-weight: 400;
+//                 line-height: 1em;
+//                 font-size: 20px;
+                
+//                 span{
+//                     // font-family: 'Raleway', sans-serif;
+//                     font-family:Arial, Helvetica, sans-serif;
+//                     font-size: 24px;
+//                     font-weight: 700;
+//                     color: @colormarktext;
+//                 }
+//             }
+//         }
+
+//         nav {
+//             flex-grow: 1;
+//             font-family: 'HelveticaLTW10-Roman';
+//             font-size: 13px;
+//             line-height: 27px;
+//             font-weight: 400;
+//             margin-left: 12px;
+//             margin-right: -8px;
+//             margin-bottom: 10px;
+
+//             ul {
+//                 display: flex;
+//                 flex-direction: row;
+//                 width: 100%;
+//                 height: 100%;
+//                 margin: 0;
+//                 padding: 0;
+//                 list-style-type: none;
+//                 justify-content: space-around;
+//                 align-items: center;
+//                 // border: 1px solid red;
+
+//                 li {
+//                     // border: 1px solid red;
+//                     // padding-left: 5px;
+//                     // padding-bottom: 5px;
+//                     padding: 0;
+//                     // flex-grow: 1;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// main{
+//     .container{
+//         border: 1px solid red;
+
+//         display: flex;
+//         max-width: 960px;
+//         height: 100%;
+//         margin: auto;
+
+//         .section-1{
+//             .circle{
+//                 position: absolute;
+//                 z-index: -1;
+//                 width: 400px;
+//                 height: 400px;
+//                 background-color: @coloractivelement;
+//                 border-radius: 50%;
+//                 margin-top: 107px;
+//                 margin-left: 14px;
+//             }
+
+//             img{
+//                 margin-top: 78px;
+//             }
+//         }
+
+//         .section-2{
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: start;
+            
+//             .section-2-1{
+
+//                 .txt-1{
+//                     margin-top: 140px;
+//                     font-family: "HelveticaBold";
+//                     font-size: 80px;
+//                     font-weight: 700;
+//                     color: @colortext
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// // .container {
+// //     display: flex;
+// //     // border: 1px solid red;
+// //     width: 1000px;
+// //     margin: auto;
+// // }
+
+// // .linkblock {
+// //     display: flex;
+// //     position: relative;
+// //     // border: 1px solid red;
+// //     // justify-content:space-between;
+// //     :hover{
+// //         background: #000;
+// //     }
+
+// //     .circle {
+// //         text-align: center;
+// //         width: 150px;
+// //         height: 150px;
+// //         border: 4px solid orange;
+// //         border-radius: 50%;
         
-//     }
+// //     }
 
-//     img {
-//         position: absolute;
-//         top: -10px;
-//     }
+// //     img {
+// //         position: absolute;
+// //         top: -10px;
+// //     }
 
-// }
+// // }
+
+
+
+
+
