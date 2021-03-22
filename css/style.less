@@ -177,22 +177,46 @@
 @color-nav-text: #383838;
 @color-nav-text-select: #3bbab5;
 @color-header-text-1: #3b958f;
-@color-header-text-2: #000000;
+// @color-header-text-2: #000000;
 @color-footer-bg: #3bb9b5;
 @color-text-common: #8b8b8b;
 
+// @font-face {
+//     font-family: "HelveticaBold";
+//     src: url("/fonts/HelveticaLT-Bold/HelveticaBold.ttf") format("truetype");
+//     font-style: normal;
+//     font-weight: 700;
+// }
+
+// ==========   helvetica - regular   ==================
+
 @font-face {
-    font-family: "HelveticaBold";
-    src: url("/fonts/HelveticaLT-Bold/HelveticaBold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: 700;
+    font-family: 'HelveticaNeueCyr';
+    src: url('fonts/HelveticaRegular/HelveticaRegular.eot');
+    src: url('fonts/HelveticaRegular/HelveticaRegular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/fon') format('woff'),
+         url('fonts/fontin_sans_regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style:normal;
+    font-display: swap;
 }
 
-.bord{
-    border: 1px solid red;
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('fonts/HelveticaRegular/HelveticaRegular.eot');
+    src: url('fonts/HelveticaRegular/HelveticaRegular.eot?#iefix') format('embedded-opentype'),
+         url('fonts/fontin_sans_regular.woff') format('woff'),
+         url('fonts/fontin_sans_regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style:normal;
+    font-display: swap;
 }
 
-a{
+// .bord {
+//     border: 1px solid red;
+// }
+
+a {
     text-decoration: none;
 }
 
@@ -213,19 +237,52 @@ a{
 header {
     display: flex;
     margin: 52px 0 0 0;
-    img{
+
+    img {
         align-self: flex-start;
     }
 }
 
 .logo {
-    p {
-        span {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 24px;
-            font-weight: 700;
-            color: @color-header-text-1;
-            margin: 0 0 0 0;
+    
+}
+
+.txt_mobilisators{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: @color-header-text-1;
+    font-weight: 700;
+    margin: 35px 0 0 -7px;
+}
+
+.txt_mobilmarcets{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: @color-nav-text;
+    font-weight: 400;
+    margin: -1px 0 0 -7px;
+}
+
+nav{
+    // display: flex;
+    flex-grow: 1;
+    // justify-content: space-between;
+    ul{
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        margin: 45px 0 0 46px;
+        padding: 0 0 0 0;
+        li{
+            font-family: 'HelveticaBold';
+            font-size: 13px;
+            line-height: 27px;
+            font-weight: 400;
+            // border: 1px solid red;
+            // margin: 0 0 0 0;
+            // padding: 0 0 0 0;
+            color: @color-nav-text;
         }
     }
+    
 }
