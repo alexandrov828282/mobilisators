@@ -14,11 +14,6 @@
   font-style: normal;
   font-display: swap;
 }
-body {
-  border: 10px solid green;
-  height: 90%;
-  width: 90%;
-}
 a {
   text-decoration: none;
 }
@@ -29,22 +24,18 @@ a {
   height: 78px;
   background-color: #e5e5e5;
   z-index: -100;
-  border: 1px solid red;
 }
 .container {
   width: 862px;
   margin: 0 auto;
-  text-align: center;
   border: 1px solid red;
 }
 header {
   display: flex;
   margin: 52px 0 0 0;
-  border: 1px solid red;
 }
 header img {
   align-self: flex-start;
-  border: 1px solid red;
 }
 .txt_mobilisators {
   font-family: Arial, Helvetica, sans-serif;
@@ -52,7 +43,6 @@ header img {
   color: #3b958f;
   font-weight: 700;
   margin: 35px 0 0 -7px;
-  border: 1px solid red;
 }
 .txt_mobilmarcets {
   font-family: 'Open Sans', sans-serif;
@@ -60,11 +50,9 @@ header img {
   color: #383838;
   font-weight: 400;
   margin: -1px 0 0 -7px;
-  border: 1px solid red;
 }
 nav {
   flex-grow: 1;
-  border: 1px solid red;
 }
 nav ul {
   display: flex;
@@ -72,7 +60,6 @@ nav ul {
   justify-content: space-between;
   margin: 45px 26px 0 48px;
   padding: 0 0 0 0;
-  border: 1px solid red;
 }
 nav ul li {
   font-family: 'HelveticaRegular';
@@ -80,6 +67,21 @@ nav ul li {
   line-height: 27px;
   font-weight: 400;
   letter-spacing: 0.055em;
-  border: 1px solid red;
   color: #383838;
+}
+.section-1 {
+  position: relative;
+}
+.section-1 img {
+  margin: 95px 0 0 -49px;
+}
+.circle {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: #3bb9b5;
+  z-index: -10;
+  top: 124px;
+  left: -35px;
 }

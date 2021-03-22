@@ -212,11 +212,11 @@
     font-display: swap;
 }
 
-body{
-    border: 10px solid green;
-    height: 90%;
-    width: 90%;
-}
+// body{
+//     border: 10px solid green;
+//     height: 90%;
+//     width: 90%;
+// }
 
 a {
     text-decoration: none;
@@ -229,24 +229,24 @@ a {
     height: 78px;
     background-color: @color-header-bg-line;
     z-index: -100;
-    border: 1px solid red;
+    // border: 1px solid red;
 }
 
 .container {
     width: 862px;
     margin: 0 auto;
-    text-align: center;
+    // text-align: center;
     border: 1px solid red;
 }
 
 header {
     display: flex;
     margin: 52px 0 0 0;
-    border: 1px solid red;
+    // border: 1px solid red;
 
     img {
         align-self: flex-start;
-        border: 1px solid red;
+        // border: 1px solid red;
     }
 }
 
@@ -260,7 +260,7 @@ header {
     color: @color-header-text-1;
     font-weight: 700;
     margin: 35px 0 0 -7px;
-    border: 1px solid red;
+    // border: 1px solid red;
 }
 
 .txt_mobilmarcets{
@@ -269,13 +269,13 @@ header {
     color: @color-nav-text;
     font-weight: 400;
     margin: -1px 0 0 -7px;
-    border: 1px solid red;
+    // border: 1px solid red;
 }
 
 nav{
     // display: flex;
     flex-grow: 1;
-    border: 1px solid red;
+    // border: 1px solid red;
     // justify-content: space-between;
     ul{
         display: flex;
@@ -283,7 +283,7 @@ nav{
         justify-content: space-between;
         margin: 45px 26px 0 48px;
         padding: 0 0 0 0;
-        border: 1px solid red;
+        // border: 1px solid red;
         
         li{
             font-family: 'HelveticaRegular';
@@ -291,11 +291,29 @@ nav{
             line-height: 27px;
             font-weight: 400;
             letter-spacing: 0.055em;
-            border: 1px solid red;
+            // border: 1px solid red;
             // margin: 0 0 0 0;
             // padding: 0 0 0 0;
             color: @color-nav-text;
         }
     }
     
+}
+
+.section-1{
+    position: relative;
+    img{
+        margin: 95px 0 0 -49px;
+    }
+}
+
+.circle{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: @color-footer-bg;
+    z-index: -10;
+    top: 124px;
+    left: -35px;
 }
