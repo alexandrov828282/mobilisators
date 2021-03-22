@@ -1,16 +1,16 @@
 @font-face {
-  font-family: 'HelveticaNeueCyr';
-  src: url('fonts/HelveticaRegular/HelveticaRegular.eot');
-  src: url('fonts/HelveticaRegular/HelveticaRegular.eot?#iefix') format('embedded-opentype'), url('fonts/fon') format('woff'), url('fonts/fontin_sans_regular.ttf') format('truetype');
+  font-family: 'HelveticaRegular';
+  src: url('/fonts/HelveticaRegular/HelveticaRegular.eot');
+  src: url('/fonts/HelveticaRegular/HelveticaRegular.eot?#iefix') format('embedded-opentype'), url('/fonts/HelveticaRegular/HelveticaRegular.woff') format('woff'), url('/fonts/HelveticaRegular/HelveticaRegular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'HelveticaNeueCyr';
-  src: url('fonts/HelveticaRegular/HelveticaRegular.eot');
-  src: url('fonts/HelveticaRegular/HelveticaRegular.eot?#iefix') format('embedded-opentype'), url('fonts/fontin_sans_regular.woff') format('woff'), url('fonts/fontin_sans_regular.ttf') format('truetype');
-  font-weight: 400;
+  font-family: 'HelveticaBold';
+  src: url('/fonts/HelveticaBold/HelveticaBold.eot');
+  src: url('/fonts/HelveticaBold/HelveticaBold.eot?#iefix') format('embedded-opentype'), url('/fonts/HelveticaBold/HelveticaBold.woff') format('woff'), url('/fonts/HelveticaBold/HelveticaBold.ttf') format('truetype');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -57,13 +57,14 @@ nav ul {
   display: flex;
   list-style-type: none;
   justify-content: space-between;
-  margin: 45px 0 0 46px;
+  margin: 45px 26px 0 48px;
   padding: 0 0 0 0;
 }
 nav ul li {
-  font-family: 'HelveticaBold';
-  font-size: 13px;
+  font-family: 'HelveticaRegular';
+  font-size: 12px;
   line-height: 27px;
   font-weight: 400;
+  letter-spacing: 0.055em;
   color: #383838;
 }
