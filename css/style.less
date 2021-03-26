@@ -156,22 +156,81 @@ nav {
         &-2 {
             display: flex;
 
-            &-1 {
-                position: relative;
+            position: relative;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 13px;
+            color: #918d8a;
+            font-weight: 400;
 
+            &-1 {
+                
                 img {
                     position: absolute;
                     top: 68px;
                     left: 7px;
                 }
 
-                p{
-                    font-family: 'Open Sans', sans-serif;
-                    font-size: 13px;
+                p {
                     position: absolute;
                     top: 129px;
                     left: 58px;
-                    color: #8c8b8b;
+                }
+            }
+
+            &-2 {
+                
+                img {
+                    position: absolute;
+                    top: 75px;
+                    left: 167px;
+                    width: 56px;
+                }
+
+                p {
+                    position: absolute;
+                    top: 129px;
+                    left: 192px;
+                }
+            }
+
+            &-3 {
+                
+                img {
+                    position: absolute;
+                    top: 71px;
+                    left: 323px;
+                }
+
+                p {
+                    position: absolute;
+                    top: 129px;
+                    left: 353px;
+                }
+            }
+        }
+
+        &-3{
+
+            &-1{
+                
+                p{
+                    font-family: 'HelveticaBold';
+                    font-size: 23px;
+                    font-weight: 700;
+                    margin: 30px 0 0 20px;
+                    // padding: 0 0 0 0;
+                    line-height: 1.5em;
+                }
+            }
+
+            &-2{
+                p{
+                    font-family: 'HelveticaBold';
+                    font-size: 24px;
+                    font-weight: 700;
+                    margin: 0px 0 0 20px;
+                    line-height: 1.5em;
+                    color: #e57d22;
                 }
             }
         }
@@ -198,10 +257,4 @@ nav {
     &-3 {
         border-color: #f4ca13;
     }
-}
-
-:root{
-    --txth: var(--color_18);
-    --txth: rgb(0,0,0);
-    color: rgb(var(--txth,var(--color_15)));
 }
