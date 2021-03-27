@@ -151,17 +151,17 @@ nav ul li {
   top: 129px;
   left: 353px;
 }
-.section-main-2-3-1 p {
+.section-main-2-3 {
   font-family: 'HelveticaBold';
-  font-size: 23px;
   font-weight: 700;
+}
+.section-main-2-3-1 p {
+  font-size: 23px;
   margin: 30px 0 0 20px;
   line-height: 1.5em;
 }
 .section-main-2-3-2 p {
-  font-family: 'HelveticaBold';
   font-size: 24px;
-  font-weight: 700;
   margin: 0px 0 61px 20px;
   line-height: 1.5em;
   color: #e57d22;
@@ -183,8 +183,55 @@ nav ul li {
 .circle-3 {
   border-color: #f4ca13;
 }
-footer {
+.footer-img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  color: #fff;
+  font-weight: 400;
+  margin: 45px 0 0 0;
+}
+.footer-section-1 {
+  display: flex;
+}
+.footer-section-1-1 {
+  position: relative;
+}
+.footer-section-2 {
+  display: flex;
+}
+.footer-section-2-1 {
+  position: relative;
+}
+.footer-section-3 {
+  display: flex;
+}
+.footer-section-3-1 {
+  position: relative;
+}
+.footer-section-4 {
+  display: flex;
+}
+.footer-section-4-1 {
+  position: relative;
+}
+.footer-bg-line {
+  z-index: -100;
+  position: absolute;
   height: 193px;
   width: 100%;
   background-color: #3bb9b5;
+}
+.footer-circle {
+  z-index: -10;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #f8c80e;
 }
