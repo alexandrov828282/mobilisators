@@ -1,9 +1,11 @@
 @color-header-bg-line: #e5e5e5;
 @color-nav-text: #383838;
 @color-nav-text-select: #3bbab5;
-@color-header-text-1: #3b958f;
+@color-header-text: #3b958f;
 @color-footer-bg: #3bb9b5;
-@color-text-common: #8b8b8b;
+@color-main-text: #8b8b8b;
+@color-footer-text: #e9e9e9;
+@width-footer-item: 200px;
 
 @font-face {
     font-family: 'HelveticaRegular';
@@ -36,6 +38,7 @@ a {
     top: 76px;
     width: 100%;
     height: 78px;
+    // background-color: @color-header-bg-line;
     background-color: @color-header-bg-line;
     z-index: -100;
     // border: 1px solid red;
@@ -61,7 +64,8 @@ a {
     &-1-txt {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 24px;
-        color: @color-header-text-1;
+        // color: @color-header-text;
+        color: @color-header-text;
         font-weight: 700;
         margin: 35px 0 0 -7px;
         // border: 1px solid red;
@@ -70,6 +74,7 @@ a {
     &-2-txt {
         font-family: 'Open Sans', sans-serif;
         font-size: 20px;
+        // color: @color-nav-text;
         color: @color-nav-text;
         font-weight: 400;
         margin: -1px 0 0 -7px;
@@ -133,7 +138,7 @@ nav {
 
         // font-family: Arial, Helvetica, sans-serif;
         font-weight: 700;
-        color: @color-text-common;
+        color: @color-main-text;
 
         &-1-txt-1 {
             font-family: 'HelveticaBold';
@@ -269,72 +274,137 @@ nav {
 
 .footer {
 
-    &-txt1{
-        font-weight: 700;
-        line-height: 0.4em;
-        letter-spacing: 0.05em;
-    }
+    // &-txt1{
+    //     margin: 5px 0 0 0;
+    //     font-weight: 700;
+    //     line-height: 1.5em;
+    //     letter-spacing: 0.05em;
+    // }
 
-    &-txt2{
-        padding: 1px 0 0 0;
-        font-weight: 400;
-        line-height: 0.3em;
-        letter-spacing: 0.001em;
-    }
-
-    &-img {
-        position: absolute;
-        top: -4px;
-        left: -7px;
-    }
+    // &-txt2{
+    //     padding: 1px 0 0 0;
+    //     font-weight: 400;
+    //     line-height: 0.3em;
+    //     letter-spacing: 0.001em;
+    // }
 
     &-section {
         display: flex;
         justify-content: space-between;
         font-family: 'Open Sans', sans-serif;
         font-size: 12px;
-        color: rgb(233, 233, 233);
-        margin: 0 0 0 60px;
+        color: @color-footer-text;
+        margin: 0 40px 0 60px;
         padding: 0;
-      
+        flex-wrap: nowrap;
+
         &-1 {
+            flex-basis: 222px;
             display: flex;
             margin-top: 48px;
-            // border: 1px solid red;
 
             &-1 {
                 position: relative;
-                // border: 1px solid red;
+
+                img {
+                    position: absolute;
+                    top: -4px;
+                    left: -7px;
+                }
             }
 
             &-2 {
-                // align-self: flex-start;
-                // border: 1px solid red;
-                margin: 0px 0 0 18px;
+
+                &-txt-1 {
+                    padding: 0;
+                    margin: 5px 0 6px 18px;
+                    font-weight: 700;
+                    line-height: 1.5em;
+                    letter-spacing: 0.05em;
+                }
+
+                &-txt-2 {
+                    padding: 0;
+                    margin: 0 0 13px 18px;
+                    font-weight: 400;
+                    line-height: 0.3em;
+                    letter-spacing: 0.001em;
+                }
             }
         }
 
         &-2 {
+            flex-basis: 200px;
             display: flex;
+            margin-top: 48px;
 
             &-1 {
                 position: relative;
+
+                img {
+                    position: absolute;
+                    top: -3px;
+                    left: -9px;
+                }
+            }
+
+            &-2 {
+                
+                &-txt-1 {
+                    padding: 0;
+                    margin: 5px 0 7px 20px;
+                    font-weight: 700;
+                    line-height: 1.45em;
+                    letter-spacing: 0.05em;
+                }
+
+                &-txt-2 {
+                    padding: 0;
+                    margin: 0 0 13px 20px;
+                    font-weight: 400;
+                    line-height: 0.3em;
+                    letter-spacing: 0.001em;
+                }
             }
         }
 
         &-3 {
+            flex-basis: 200px;
             display: flex;
+            margin-top: 48px;
 
             &-1 {
                 position: relative;
+
+                img {
+                    position: absolute;
+                    top: -4px;
+                    left: -7px;
+                }
+            }
+
+            &-2 {
+                margin-left: 18px;
             }
         }
 
         &-4 {
+            flex-basis: 200px;
             display: flex;
+            margin-top: 48px;
 
             &-1 {
                 position: relative;
+
+                img {
+                    position: absolute;
+                    top: -4px;
+                    left: -7px;
+                }
+            }
+
+            &-2 {
+                margin-left: 18px;
             }
         }
     }
