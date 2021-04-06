@@ -1,0 +1,170 @@
+// out: false
+
+.footer {
+ 
+   &-section {
+       display: flex;
+       justify-content: start;
+       font-family: 'Open Sans', sans-serif;
+       font-size: 12px;
+       color: @color-footer-text;
+       margin: 0 40px 0 60px;
+       padding: 0;
+       flex-wrap: nowrap;
+
+       &-1 {
+           display: flex;
+           margin-top: 48px;
+           min-width: 234px;
+
+           &-1 {
+               position: relative;
+
+               img {
+                   position: absolute;
+                   top: -4px;
+                   left: -7px;
+               }
+           }
+
+           &-2 {
+
+               &-txt-1 {
+                   padding: 0;
+                   margin: 5px 0 6px 18px;
+                   font-weight: 700;
+                   line-height: 1.5em;
+                   letter-spacing: 0.05em;
+               }
+
+               &-txt-2 {
+                   padding: 0;
+                   margin: 0 0 13px 18px;
+                   font-weight: 400;
+                   line-height: 0.3em;
+                   letter-spacing: 0.001em;
+               }
+           }
+       }
+
+       &-2 {
+           display: flex;
+           margin-top: 48px;
+           min-width: 212px;
+
+           &-1 {
+               position: relative;
+
+               img {
+                   position: absolute;
+                   top: -3px;
+                   left: -9px;
+               }
+           }
+
+           &-2 {
+
+               &-txt-1 {
+                   padding: 0;
+                   margin: 5px 0 7px 20px;
+                   font-weight: 700;
+                   line-height: 1.45em;
+                   letter-spacing: 0.05em;
+               }
+
+               &-txt-2 {
+                   padding: 0;
+                   margin: 0 0 13px 20px;
+                   font-weight: 400;
+                   line-height: 0.3em;
+                   letter-spacing: 0.001em;
+               }
+           }
+       }
+
+       &-3 {
+           display: flex;
+           margin-top: 48px;
+           min-width: 205px;
+
+           &-1 {
+               position: relative;
+               margin-left: 3px;
+
+               img {
+                   position: absolute;
+                   top: -3px;
+                   left: -9px;
+               }
+           }
+
+           &-2 {
+
+               &-txt-1 {
+                   padding: 0;
+                   margin: 5px 0 7px 10px;
+                   font-weight: 700;
+                   line-height: 1.45em;
+                   letter-spacing: 0.05em;
+               }
+           }
+       }
+
+       &-4 {
+           display: flex;
+           margin-top: 48px;
+           min-width: 225px;
+
+           &-1 {
+               position: relative;
+
+               img {
+                   position: absolute;
+                   top: -3px;
+                   left: -8px;
+               }
+           }
+
+           &-2 {
+
+               &-txt-2 {
+                   padding: 0;
+                   margin: 10px 0 13px 20px;
+                   font-weight: 400;
+                   line-height: 0.3em;
+                   letter-spacing: 0.001em;
+               }
+           }
+       }
+   }
+
+   &-bg-line {
+       z-index: -100;
+       position: absolute;
+       height: 193px;
+       width: 100%;
+       background-color: @color-footer-bg;
+   }
+
+   &-circle {
+       z-index: -10;
+       height: 45px;
+       width: 45px;
+       border-radius: 50%;
+       background-color: #f8c80e;
+   }
+
+}
+
+.socium-badge {
+   font-family: "fontello";
+   font-size: 16px;
+   margin: -2px 10px 0 0;
+   color: #fff;
+
+   &-wrapper {
+       display: flex;
+       margin-left: 14px;
+       margin-bottom: 1px;
+   }
+}
