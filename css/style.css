@@ -78,6 +78,9 @@ nav ul li a:hover {
   background-color: #e5e5e5;
   z-index: -100;
 }
+.general-visible {
+  display: none;
+}
 .general-section {
   display: flex;
 }
