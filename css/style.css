@@ -233,6 +233,12 @@ nav ul li a:hover {
   color: #e57d22;
   letter-spacing: -0.05em;
 }
+.section-services {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+  grid-template-areas: "header header header";
+}
 .footer-section {
   display: flex;
   justify-content: start;
