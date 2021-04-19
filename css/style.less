@@ -320,11 +320,32 @@ nav {
     display: grid;
     grid-template-columns: 200px 200px 200px 200px 200px 200px;
     grid-template-rows: 200px 200px 200px;
-    grid-template-areas: "header header header";
+    grid-template-areas: 
+    
+    "header       header          header"
+    "main-img-1   main-text-1     clients"
+    "main-img-2   main-text-2     clients"
+    "main-img-3   main-text-3     clients"
+    "main-img-4   main-text-4     clients"
+    "main-img-5   main-text-5     clients"
+
+    ;
 
     &-header{
-
+        grid-area: header;
     }
+
+    &-main{
+
+        &-img{
+
+            &-1{
+                
+            }
+        }
+    }
+
+
 }
 
 //======== FOOTER ========//
