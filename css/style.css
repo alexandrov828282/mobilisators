@@ -235,12 +235,62 @@ nav ul li a:hover {
 }
 .section-services {
   display: grid;
-  grid-template-columns: 200px 200px 200px 200px 200px 200px;
-  grid-template-rows: 200px 200px 200px;
   grid-template-areas: "header       header          header" "main-img-1   main-text-1     clients" "main-img-2   main-text-2     clients" "main-img-3   main-text-3     clients" "main-img-4   main-text-4     clients" "main-img-5   main-text-5     clients";
+}
+.section-services-hr {
+  width: 600px;
+  height: 0;
+  border-top: 1px solid #edb888;
+  margin: 30px 0 100px 65px;
 }
 .section-services-header {
   grid-area: header;
+}
+.section-services-header h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  color: #8b8b8b;
+  margin: 80px 0 0 52px;
+}
+.section-services-main-circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: #3bb9b5;
+}
+.section-services-main-img-1 {
+  grid-area: main-img-1;
+}
+.section-services-main-img-2 {
+  grid-area: main-img-2;
+}
+.section-services-main-img-3 {
+  grid-area: main-img-3;
+}
+.section-services-main-img-4 {
+  grid-area: main-img-4;
+}
+.section-services-main-img-5 {
+  grid-area: main-img-5;
+}
+.section-services-main-text-1 {
+  grid-area: main-text-1;
+}
+.section-services-main-text-2 {
+  grid-area: main-text-2;
+}
+.section-services-main-text-3 {
+  grid-area: main-text-3;
+}
+.section-services-main-text-4 {
+  grid-area: main-text-4;
+}
+.section-services-main-text-5 {
+  grid-area: main-text-5;
+}
+.section-services-main-clients {
+  grid-area: clients;
 }
 .footer-section {
   display: flex;
