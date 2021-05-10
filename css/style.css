@@ -241,7 +241,7 @@ nav ul li a:hover {
   width: 600px;
   height: 0;
   border-top: 1px solid #edb888;
-  margin: 30px 0 100px 65px;
+  margin: 30px 0 55px 65px;
 }
 .section-services-header {
   grid-area: header;
@@ -254,10 +254,14 @@ nav ul li a:hover {
   margin: 80px 0 0 52px;
 }
 .section-services-main-circle {
-  width: 130px;
-  height: 130px;
+  width: 125px;
+  height: 125px;
   border-radius: 50%;
   background: #3bb9b5;
+  margin-left: 66px;
+}
+.section-services-main-circle span {
+  text-align: center;
 }
 .section-services-main-img-1 {
   grid-area: main-img-1;
